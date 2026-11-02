@@ -16,14 +16,14 @@ pipeline {
 
     environment {
         TF_DIR = 'infrastructure/backend'
-        AWS_DEFAULT_REGION = 'eu-west-1'
+        AWS_DEFAULT_REGION = 'us-east-1'
     }
 
     stages {
 
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/AnupDudhe/cdec-alpha-app.git', branch: 'main'
+                git url: 'https://github.com/RutujaRajgure/alpha-app.git', branch: 'main'
             }
         }
 
