@@ -8,4 +8,4 @@ acm_certificate_arn ="arn:aws:acm:us-east-1:058835009153:certificate/e7ffd7fc-61
 
 # Use a domain you own — example.com is reserved by AWS and will fail
 dns_zone_name   =  "techdns.shop"
-dns_record_name = "www.infra-software-architect.online"
+dns_record_name ="www.techdns.shop"
