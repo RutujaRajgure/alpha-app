@@ -24,17 +24,17 @@ pipeline {
         )
         string(
             name: 'VITE_AUTH_API',
-            defaultValue: 'https://api.infra-software-architect.online/api/auth',
+            defaultValue: 'https://api.techdns.shop/api/auth',
             description: 'Auth API URL baked into the build'
         )
         string(
             name: 'VITE_COURSE_API',
-            defaultValue: 'https://api.infra-software-architect.online/api/courses',
+            defaultValue: 'https://api.techdns.shop/api/courses',
             description: 'Course API URL baked into the build'
         )
         string(
             name: 'VITE_ENROLL_API',
-            defaultValue: 'https://api.infra-software-architect.online/api/enroll',
+            defaultValue: 'https://api.techdns.shop/api/enroll',
             description: 'Enrollment API URL baked into the build'
         )
     }
