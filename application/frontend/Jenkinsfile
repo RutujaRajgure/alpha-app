@@ -14,12 +14,12 @@ pipeline {
     parameters {
         string(
             name: 'S3_BUCKET',
-            defaultValue: 'cdec-alpha-cbzpb3738-dev-frontend', 
+            defaultValue: 'jenkins-terraform-frontend-dev-frontend', 
             description: 'S3 bucket name for the frontend (e.g. cdec-frontend-dev-frontend)'
         )
         string(
             name: 'CLOUDFRONT_DISTRIBUTION_ID',
-            defaultValue: 'E2TL4UD7PWJ2E3',
+            defaultValue: 'E2YQP8HZ891TBX',
             description: 'CloudFront distribution ID (e.g. E1234567890ABC)'
         )
         string(
