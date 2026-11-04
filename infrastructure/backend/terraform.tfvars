@@ -35,5 +35,5 @@ additional_tags = {
 # ALB Ingress — AWS Load Balancer Controller + API ingress
 enable_alb_ingress  = true
 ingress_host        = "api.techdns.shop"
-acm_certificate_arn = "arn:aws:acm:us-east-1:058835009153:certificate/e7ffd7fc-6192-43db-b5c9-5cfa6e7e4ab1"
+acm_certificate_arn = "arn:aws:acm:us-east-1:058835009153:certificate/64d3782b-95e6-42a5-a956-e158f5a5f58d"
 alb_name            = "cdec-alpha-alb"
