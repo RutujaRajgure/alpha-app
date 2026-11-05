@@ -26,10 +26,13 @@ pipeline {
         }
 
         stage('Build Docker image') {
+            agent {
+                label 'master'
+            }
             steps {
                 dir('application/backend/auth-service') {
                     sh '''
-                       docker build -t 058835009153.dkr.ecr.us-east-1.amazonaws.com/alpha/auth:latest .
+                       docker build -t 058835009153.dkr.ecr.us-east-1.amazonaws.com/alpha/auth:latest
                                 
                     '''
                 }
@@ -37,6 +40,9 @@ pipeline {
         }
 
         stage('Push to ECR') {
+            agent {
+                label 'master'
+            }
             steps {
                 withCredentials([[
                     $class: 'AmazonWebServicesCredentialsBinding',
