@@ -26,9 +26,6 @@ pipeline {
         }
 
         stage('Build Docker image') {
-            agent {
-                label 'master'
-            }
             steps {
                 dir('application/backend/auth-service') {
                     sh '''
@@ -40,9 +37,6 @@ pipeline {
         }
 
         stage('Push to ECR') {
-            agent {
-                label 'master'
-            }
             steps {
                 withCredentials([[
                     $class: 'AmazonWebServicesCredentialsBinding',
