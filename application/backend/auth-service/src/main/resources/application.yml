@@ -6,7 +6,7 @@ spring:
     name: auth-service
   data:
      mongodb:
-       uri: ${MONGO_URI:mongodb+srv:// rutu9168_db_user:3Yk2F5QJYSUpTc7P@ecommerceapi.y9rbnjl.mongodb.net/cb_auth?retryWrites=true&w=majority&appName=cdec-dev}
+       uri: ${MONGO_URI:mongodb+srv://rutu9168_db_user:3Yk2F5QJYSUpTc7P@ecommerceapi.y9rbnjl.mongodb.net/cb_auth?retryWrites=true&w=majority&appName=cdec-dev}
 
                        
   security:
