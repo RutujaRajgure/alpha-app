@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: enrollment-service
-          image: 365642143872.dkr.ecr.eu-west-1.amazonaws.com/backend/enrollment:latest
+          image: 058835009153.dkr.ecr.us-east-1.amazonaws.com/alpha/enroll:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8083
